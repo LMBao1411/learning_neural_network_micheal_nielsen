@@ -31,3 +31,7 @@ Stochastic gradient descent can be used to speed up learning.
 The idea is to estimate the gradient ∇C by computing ∇Cx for a small sample of randomly chosen training inputs.
 By averaging over this small sample it turns out that we can quickly get a good estimate of the true gradient ∇C, and this helps speed up gradient descent, and thus learning.
 
+
+
+
+
