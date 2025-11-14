@@ -40,4 +40,9 @@ Then stochastic gradient descent works by picking out a randomly chosen mini-bat
 $w_k \rightarrow w'_k = w_k - \frac{η}{m} \sum_j \frac{∇C_{X_{j}}}{∂w_k} $  
   
 $b_l \rightarrow b'_l = b_l - \frac{η}{m} \sum_j \frac{∇C_{X_{j}}}{∂b_l} $
-  
+
+CODING:  
+np.random.randn function to generate Gaussian distributions with mean 0 and standard deviation 1. This random initialization gives our stochastic gradient descent algorithm a place to start from  
+
+SGD function
+In each epoch, it starts by randomly shuffling the training data, and then partitions it into mini-batches of the appropriate size. This is an easy way of sampling randomly from the training data. Then for each mini_batch we apply a single step of gradient descent. This is done by the code self.update_mini_batch(mini_batch, eta), which updates the network weights and biases according to a single iteration of gradient descent, using just the training data in mini_batch.
